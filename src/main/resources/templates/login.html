@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/loginCheck" method="get">
+    <table>
+        <tr>
+            <td>id : <input type="text" name="id" width="30px"/></td>
+        </tr>
+        <tr>
+            <td>pw:<input type="password" name="pw" width="30px"/></td>
+        </tr>
+        <tr><td><button type="submit">login </button></td></tr>
+        <tr>
+            <td th:text="${msg}"></td>
+        </tr>
+    </table>
+</form>
+
+id/pw : tester / 123123
+</body>
+</html>
